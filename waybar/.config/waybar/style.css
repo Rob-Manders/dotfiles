@@ -21,21 +21,26 @@ tooltip {
   border: 1px solid rgba(100, 114, 125, 0.5);
 }
 
-/* tooltip label {
-  color: white;
-} */
+tooltip {
+    background-color: @mantle;
+    color: @text;
+    border-radius: 6px;
+    border: 1px solid shade(@text, 0.4);
+}
 
 #workspaces button {
-    padding: 1px 8px;
+    /* background: transparent; */
+    padding: 1px 6px;
     color: shade(@text, 0.7);
-    margin: 6px 0 6px 6px;
+    margin: 4px 0 4px 4px;
     border-radius: 6px;
     transition: 250ms ease-in-out;
+    border: 1px solid transparent;
 }
 
 #workspaces button.active, #workspaces button.focused {
     color: @text;
-    background-color: shade(@mantle, 0.9);
+    border: 1px solid shade(@text, 0.4);
 }
 
 #mode, #battery, #network {
